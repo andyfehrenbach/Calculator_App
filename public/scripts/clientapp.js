@@ -6,6 +6,7 @@ $(document).ready(function(){
     $('#subtract').on('click', subtractOperator);
     $('#multiply').on('click', multiplyOperator);
     $('#divide').on('click', divideOperator);
+    $('#clear').on('click', clearEverything);
 });
 
 function getXAndY() {
@@ -15,7 +16,7 @@ function getXAndY() {
         values[field.name] = field.value;
     });
 
-    $('.digit').find('input[type=text]').val('');
+
 
     console.log(values);
     $.ajax({
@@ -53,4 +54,9 @@ function divideOperator (){
 //append data to the dom
 function refreshDom (num) {
     $('#result').text(num);
+}
+
+function clearEverything (){
+    $('.digit').find('input').val('');
+    $('#result').text('');
 }

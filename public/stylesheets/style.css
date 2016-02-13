@@ -1,7 +1,32 @@
-label, input {
-    display: inline-block;
+ input {
+   margin-right: 2em;
 }
+
+ label {
+     margin-right: .5em;
+ }
 
 h1{
     color: black;
+}
+
+button {
+    margin: .5em;
+}
+
+form {
+    margin: 1em;
+    font-size: 1em;
+}
+
+form, h1, h2 {
+    font-family: 'Verdana', sans-serif;
+}
+
+button{
+    font-size: 1em;
+}
+
+#clear {
+    display: inline;
 }
