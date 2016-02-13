@@ -2,11 +2,33 @@
 <html>
 <head>
     <title>Calculator APP</title>
+    <link  rel="stylesheet" href="/stylesheets/style.css">
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/clientapp.js"></script>
 </head>
 <body>
 <h1>Calculator</h1>
+
+<form class="xDigit">
+    <label for="xDigit">Enter Value X</label>
+    <input  type="number" id="xDigit" name="xDigit"/>
+    <label for="yDigit"> Enter Value Y</label>
+    <input type="number" id="yDigit" name="yDigit"/>
+</form>
+
+<div class="operations">
+    <button id="add"> + </button>
+    <button id="subtract"> - </button>
+    <button id="multiply"> * </button>
+    <button id="divide"> / </button>
+</div>
+
+<div class="result">
+    <button id="calculate">Calculate!</button>
+    <h2 id="result"></h2>
+
+</div>
+
 
 </body>
 </html>
