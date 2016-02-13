@@ -6,6 +6,11 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('port', process.env.PORT || 5000);
 
+app.post('/', function(req,res){
+    console.log('request :' + data);
+
+});
+
 app.get('/*', function(req, res){
     console.log("here is the request: ", req.params);
     var file = req.params[0] || '/views/index.html';
