@@ -2,52 +2,59 @@
 <html>
 <head>
     <title>Calculator APP</title>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link  rel="stylesheet" href="/stylesheets/style.css">
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/clientapp.js"></script>
 </head>
 <body>
-<h1>CALCULATOR</h1>
 
-<form class="display">
-    <label for="display"></label>
-    <input type="number" id="display" name="display"/>
-</form>
+<div class="instrument">
+    <form class="display">
+        <label for="display"></label>
+        <input type="number" id="display" name="display"/>
+    </form>
 
-<div class="Buttons">
-    <div class="row">
-        <button class="num" value="1">1</button>
-        <button class="num" value="2">2</button>
-        <button class="num" value="3">3</button>
+    <div class="result">
+        <button id="calculate">=</button>
+
+        <button id="clear">CE</button>
+        <button id="subtract"> - </button>
     </div>
-   <div class="row">
-       <button class="num" value="4">4</button>
-        <button class="num" value="5">5</button>
-        <button class="num" value="6">6</button>
-   </div>
 
-    <div class="row">
-        <button class="num" value="7">7</button>
-        <button class="num" value="8">8</button>
-        <button class="num" value="9">9</button>
+    <div class="operations">
+    </div>
+
+    <div class="Buttons">
+        <div class="row">
+            <button class="num" value="1">1</button>
+            <button class="num" value="2">2</button>
+            <button class="num" value="3">3</button>
+            <button id="multiply"> * </button>
+
+        </div>
+       <div class="row">
+           <button class="num" value="4">4</button>
+            <button class="num" value="5">5</button>
+            <button class="num" value="6">6</button>
+           <button id="divide"> / </button>
+
+       </div>
+
+        <div class="row">
+            <button class="num" value="7">7</button>
+            <button class="num" value="8">8</button>
+            <button class="num" value="9">9</button>
+            <button id="add"> + </button>
+
+        </div>
     </div>
 </div>
 
 
 
-<div class="operations">
-    <button id="add"> + </button>
-    <button id="subtract"> - </button>
-    <button id="multiply"> * </button>
-    <button id="divide"> / </button>
-</div>
 
-<div class="result">
-    <button id="calculate">Calculate!!</button>
-    <button id="clear">Clear!!</button>
-    <h2 id="result"></h2>
 
-</div>
 
 
 </body>

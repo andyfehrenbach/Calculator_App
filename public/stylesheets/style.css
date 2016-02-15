@@ -1,50 +1,115 @@
- input {
-   margin-right: 2em;
+/*//FORM RESET*/
+
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-background-clip: padding;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    background-color: #efefef;
+    color: #000;
+    outline: 0;
+    margin: 0;
+    padding: 0 .2em;
+    text-align: left;
+    font-size: 1em;
+    height: 1em;
+    vertical-align: middle;
+    border: none;
+    width: 442px;
+    height: 100px;
+    font: 4em verdana;
+    font-weight: bold;
+    text-align: right;
+    margin: 25px 0 10px 5px;
 }
 
- label {
-     margin-right: .5em;
- }
+select, select, select{
+
+    background:#fff url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
+
+    background-repeat: no-repeat;
+
+    background-position: 97% center;
+
+    padding:0 25px 0 8px;
+
+    font-size: .875em
+
+}
+
+/*End RESET*/
+
+
+.instrument {
+    margin: 0 auto;
+}
 
 h1{
     color: black;
 }
 
 button {
-    margin: .5em;
+    margin: 1em;
 }
 
-form {
-    margin: 1em;
-    font-size: 1em;
-}
 
 form, h1, h2 {
     font-family: 'Verdana', sans-serif;
 }
 
-button{
-    font-size: 1em;
-}
 
 #clear {
     display: inline;
 }
 
- /*button {*/
- /*!*Reset's every elements apperance*!*/
-     /*background: none repeat scroll 0 0 transparent;*/
-     /*border: medium none;*/
-     /*border-spacing: 0;*/
-     /*color: #26589F;*/
-     /*font-family: 'PT Sans Narrow',sans-serif;*/
-     /*font-size: 16px;*/
-     /*font-weight: normal;*/
-     /*line-height: 1.42rem;*/
-     /*list-style: none outside none;*/
-     /*margin: 0;*/
-     /*padding: 0;*/
-     /*text-align: left;*/
-     /*text-decoration: none;*/
-     /*text-indent: 0;*/
- /*}*/
+ button {
+ /*Reset's every elements apperance*/
+     background: none repeat scroll 0 0 transparent;
+     background-color: lightblue;
+     border: none;
+     border-spacing: 0;
+     color: #fff;
+     font-family: 'verdana',sans-serif;
+     font-size: 3em;
+     font-weight: bold;
+     line-height: 1.42rem;
+     list-style: none outside none;
+     margin: 5px;
+     /* padding: 1em; */
+     width: 100px;
+     height: 100px;
+     text-align: center;
+     text-decoration: none;
+     text-indent: 0;
+     cursor: hand;
+ }
+
+
+ button:hover {
+ background-color: #4fabc9;
+ }
+
+ #calculate {
+     background-color: indianred;
+     width: 214px;
+ }
+
+#calculate:hover {
+    background-color: darkred;
+}
+
+#clear {
+   background-color: #91C0F2;
+}
+
+#clear:hover {
+    background-color: cornflowerblue;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+}
