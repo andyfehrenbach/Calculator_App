@@ -17,10 +17,13 @@ function calculatorIntake2 () {
         values.xDigit = $(this).val();
         $('#display').val($(this).val());
         count++;
+        console.log(values);
     } else {
         values.yDigit = $(this).val();
         $('#display').val($(this).val());
         count = 0;
+        console.log(values);
+
     }
 }
 

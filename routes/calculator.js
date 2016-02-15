@@ -12,7 +12,8 @@ router.post('/', function(req,res){
 
     calculate(type, x, y);
     console.log(result);
-    result = result.toString();
+    result = result.toFixed(6).toString();
+
     res.send(result);
 });
 
