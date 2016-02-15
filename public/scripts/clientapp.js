@@ -4,11 +4,11 @@ var count = 0;
 $(document).ready(function(){
     $('.num').on('click', calculatorIntake2);
     $('#calculate').on('click', sendData);
+    $('#clear').on('click', clearEverything);
     $('#add').on('click', addOperator);
     $('#subtract').on('click', subtractOperator);
     $('#multiply').on('click', multiplyOperator);
     $('#divide').on('click', divideOperator);
-    $('#clear').on('click', clearEverything);
 });
 
 //experiment #4
@@ -16,15 +16,11 @@ function calculatorIntake2 () {
     if (count == 0) {
         values.xDigit = $(this).val();
         $('#display').val($(this).val());
-        console.log(values);
         count++;
-        console.log(count);
     } else {
         values.yDigit = $(this).val();
         $('#display').val($(this).val());
-        console.log(values);
         count = 0;
-        console.log(count);
     }
 }
 
@@ -53,16 +49,16 @@ function divideOperator (){
 //append data to the dom
 function refreshDom (num) {
     clearDisplay();
-    $('.digit').find('input').val(num);
+    $('.display').find('input').val(num);
 }
 
 function clearEverything (){
-    $('.digit').find('input').val('');
+    $('.display').find('input').val('');
     $('#result').text('');
 }
 
 function clearDisplay () {
-    $('.digit').find('input').val('');
+    $('.display').find('input').val('');
 }
 
 function sendData () {
